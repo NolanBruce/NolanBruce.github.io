@@ -13,8 +13,7 @@ window.addEventListener("load", function() {
     // browser window.
     var canvas = document.createElement("canvas");
     // Get WebGLRenderingContext from canvas element.
-    var gl = !! canvas.getContext("webgl") 
-      || !! canvas.getContext("experimental-webgl");
+    var gl = !! canvas.getContext("webgl");
     var rendcon = !! window.WebGLRenderingContext;
     // Report the result.
     if (rendcon && gl) {
