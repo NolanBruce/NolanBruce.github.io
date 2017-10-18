@@ -16,7 +16,8 @@ window.addEventListener("load", function() {
     var gl = canvas.getContext("webgl") 
       || canvas.getContext("experimental-webgl");
     // Report the result.
-    if (gl && gl instanceof WebGLRenderingContext) {
+    if (!! window.WebGLRenderingContext && ( 
+         canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) )) {
       paragraph.innerHTML = 
         "Congratulations! Your browser supports WebGL.";
     } else {
