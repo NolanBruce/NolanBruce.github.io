@@ -267,13 +267,13 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Lab4-nmbruce">
-    <wsdl:port name="Lab4ServiceHttpSoap12Endpoint" binding="ns:Lab4-nmbruceSoap12Binding">
+    <wsdl:port name="Lab4-nmbruceHttpSoap12Endpoint" binding="ns:Lab4-nmbruceSoap12Binding">
       <soap12:address location="http://localhost:8080/axis2/services/Lab4-nmbruce"/>
     </wsdl:port>
-    <wsdl:port name="Lab4ServiceHttpSoap11Endpoint" binding="ns:Lab4ServiceSoap11Binding">
+    <wsdl:port name="Lab4-nmbruceHttpSoap11Endpoint" binding="ns:Lab4-nmbruceSoap11Binding">
       <soap:address location="http://localhost:8080/axis2/services/Lab4-nmbruce"/>
     </wsdl:port>
-    <wsdl:port name="Lab4ServiceHttpEndpoint" binding="ns:Lab4ServiceHttpBinding">
+    <wsdl:port name="Lab4-nmbruceHttpEndpoint" binding="ns:Lab4-nmbruceHttpBinding">
       <http:address location="http://localhost:8080/axis2/services/Lab4-nmbruce"/>
     </wsdl:port>
   </wsdl:service>
