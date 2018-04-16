@@ -141,7 +141,7 @@
     </wsdl:fault>
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="Lab4ServiceSoap11Binding" type="ns:Lab4ServicePortType">
+  <wsdl:binding name="Lab4-nmbruceSoap11Binding" type="ns:Lab4ServicePortType">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="getSubjects">
       <soap:operation soapAction="urn:getSubjects" style="document"/>
@@ -183,7 +183,7 @@
       </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="Lab4ServiceSoap12Binding" type="ns:Lab4ServicePortType">
+  <wsdl:binding name="Lab4-nmbruceSoap12Binding" type="ns:Lab4ServicePortType">
     <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="getSubjects">
       <soap12:operation soapAction="urn:getSubjects" style="document"/>
@@ -225,7 +225,7 @@
       </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:binding name="Lab4ServiceHttpBinding" type="ns:Lab4ServicePortType">
+  <wsdl:binding name="Lab4-nmbruceHttpBinding" type="ns:Lab4ServicePortType">
     <http:binding verb="POST"/>
     <wsdl:operation name="getSubjects">
       <http:operation location="getSubjects"/>
